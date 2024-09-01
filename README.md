@@ -15,7 +15,7 @@ To game this out, consider user X is logged in to the site (authorized) and goes
 Now user Y logs in and also goes to endpoint A. Rather than regenerating the page, the server serves up the cached page previouly served to user X.  
 You can see why this is a problem on a number of levels - not the least being security.
 
-However there is a case for server-caching contact that is specific to the endpoint but should be served up to **all** authorized users, such as say a list of 2000 store addresses for an organisation pulled from a database.
+However there is a case for server-caching content that is specific to the endpoint but should be served up to **all** authorized users, such as say a list of 2000 store addresses for an organisation pulled from a database.
 
 To add the new *AspNetCorePlus_AddResponseCaching* middleware to the service pipeline, once the project reference has been added, use in ```startup.cs```:
 
